@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to right, #6366f1, #06b6d4);
+}
+
+.about {
+  text-align: center;
+  padding: 40px;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.projects {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px auto;
+  width: 300px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header {
+  animation: fadeInUp 1s ease;
+}
+
+.about {
+  animation: fadeInUp 1.2s ease;
+}
+
+.projects {
+  animation: fadeInUp 1.4s ease;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
